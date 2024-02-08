@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17zin9Lg6UJH5XLrZB+8e5+Z3u9EV1u1FOQSH51/6mP1CUdXQ+gMMA6" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        .gradient-custom-3 {
+            /* fallback for old browsers */
+            background: #84fab0;
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+        }
+
+        .gradient-custom-4 {
+            /* fallback for old browsers */
+            background: #84fab0;
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="width: auto; position: relative;  --bs-navbar-padding-y: 0.6rem; --bs-bg-opacity: .5">
+          <div class="container-fluid">
+            <span class="navbar-brand mx-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="#">Expense Tracker</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/signup">Signup</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 20px;" href="/support">Support us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 50px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="mailto:sohomdas98740@gmail.com">Email</a></li>
+                        <li class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://www.linkedin.com/in/sohom-das-001300225">Linkedin</a></li>
+                        <li class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://instagram.com/sohomdas001?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+      </header>
+    <section class="vh-100 bg-image"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5" style="font-family: 'Salsa';">Login</h2>
+
+                                <form method="post" action="/login">
+
+                                    <div class="form-outline d-flex align-items-center mb-4">
+                                        <input required type="email" id="form3Example3cg" name="email"
+                                            class="form-control form-control-lg" style="font-family: 'Salsa';" />
+                                        <label class="form-label" for="form3Example4cg"
+                                            style="font-family: 'Salsa';">Email</label>
+                                        <i class="fa-regular fa-envelope" id="icon2"
+                                            style="display: none; margin-left: -70px;"></i>
+                                    </div>
+
+                                    <div class="form-outline d-flex align-items-center mb-4">
+                                        <input required type="password" id="form3Example4cg" name="password"
+                                            class="form-control form-control-lg" style="font-family: 'Salsa';" />
+                                        <label class="form-label" for="form3Example4cg" style="font-family: 'Salsa';"
+                                            name="password">Password</label>
+                                        <i class="fa-solid fa-lock" id="icon3"
+                                            style="display: none; margin-left: -70px;"></i>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                                            style="font-family: 'Salsa';">Login</button>
+                                    </div>
+
+                                    <p class="text-center text-muted mt-5 mb-0" style="font-family: 'Salsa';">Don't have an account? <a href="/signup" class="fw-bold text-body"
+                                            style="font-family: 'Salsa';"><u>SignUp here</u></a></p>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // jQuery document ready function
+        $(document).ready(function () {
+            // Function to check if the input field is empty
+            function checkInput(inputId, labelSelector, iconSelector) {
+                var inputField = $('#' + inputId);
+                var label = $(labelSelector);
+                var icon = $(iconSelector);
+
+                if (inputField.val() !== '') {
+                    label.hide();
+                    icon.show();
+                } else {
+                    label.show();
+                    icon.hide();
+                }
+            }
+
+            // Attach event listeners to input fields
+            $('#form3Example1cg').on('input', function () {
+                checkInput('form3Example1cg', '[for="form3Example1cg"]', '#icon1');
+            });
+
+            $('#form3Example3cg').on('input', function () {
+                checkInput('form3Example3cg', '[for="form3Example3cg"]', '#icon2');
+            });
+
+            $('#form3Example4cg').on('input', function () {
+                checkInput('form3Example4cg', '[for="form3Example4cg"]', '#icon3');
+            });
+
+            $('#form3Example4cdg').on('input', function () {
+                checkInput('form3Example4cdg', '[for="form3Example4cdg"]', '#icon4');
+            });
+
+            // Initial check on page load
+            checkInput('form3Example1cg', '[for="form3Example1cg"]', '#icon1');
+            checkInput('form3Example3cg', '[for="form3Example3cg"]', '#icon2');
+            checkInput('form3Example4cg', '[for="form3Example4cg"]', '#icon3');
+            checkInput('form3Example4cdg', '[for="form3Example4cdg"]', '#icon4');
+        });
+    </script>
+</body>
+
+</html>

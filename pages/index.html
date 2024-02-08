@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home - Expense Tracker</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://hdqwalls.com/download/city-4k-buildings-skyscraper-view-l3-1680x1050.jpg');
+    background-size: cover;
+    background-position: center;
+    display:flexbox;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    width: 100%;
+    }
+
+    @keyframes slide-down {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .navbar {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    .nav-link a{
+      text-decoration-thickness: 100px;
+    }
+
+    .container1 {  
+      margin: 0px 0px;
+      float: center;
+      position: relative;
+      top: 88.5%;
+      transform: translateY(38.5%);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 93vh;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+  .button {
+      padding: 10px 0px;
+      width: 250px;
+      background-color: transparent;
+      border: 3px solid white;
+      color: #ffffff;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10% ;
+      align-items: center;
+      text-align: center;
+      transition: all 0.8s;
+      animation: slide-up 3s ease-out;
+  }
+
+  .button:hover{
+      background-color: #ffffff;
+      color:black;
+  }
+    
+    
+    .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    @keyframes slide-up {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #responsive-text1 .main-text1 {
+      color: #ffffff;
+      font-size: 30px;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      white-space: nowrap;
+      text-decoration: none;
+      margin: 0;
+      padding-bottom: 9px;
+      position: absolute;
+      top: 39%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation: fade 3s ease-in-out;
+    }
+    
+    #responsive-text1 .main-text1 h3 {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    
+    #responsive-text2 .main-text2 {
+      color: #ffffff;
+      font-size: 65px;
+      @font-face {
+        font-family: BebasNeue;
+        src: url(BebasNeue: Bold.otf;);
+        font-weight: bold;
+      }
+      white-space: nowrap;
+      text-decoration: none;
+      margin: 0;
+      position: absolute;
+      top: 46%;
+      left: 51%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation-name: slideUp;
+      animation-duration: 5s;
+      animation-timing-function: ease-out;
+      visibility: visible;
+      animation: fade 3s ease-in-out;
+    }
+
+    
+    #responsive-text2 .main-text2 h1 {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
+      animation-name: slideUp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      visibility: visible;
+    }
+    
+    #responsive-text3 .sub-text {
+      color: #ffffff;
+      font-size: 14px;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      white-space: nowrap;
+      text-decoration: none;
+      margin: 0;
+      padding-bottom: 2px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    
+    #responsive-text3 .sub-text h6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    
+    .container3{
+      margin: 0;
+      padding: 0;
+      display: block;
+      box-sizing: border-box;
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      height: 135px; /* Adjust the height of the background bar */
+      background-color: rgb(0, 0, 0); /* Set the desired background color */
+      width: 100%; /* Set the width to span the full width of the container */
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      display: flexbox;
+      opacity: .5;
+    }
+
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+      }
+      
+      .footer-left {
+        flex: 1;
+        margin-left: 2%;
+      }
+      
+      .footer-left h4 {
+        margin-top: 0;
+      }
+      
+      .footer-right {
+        margin-right: 5%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+      
+      .footer-right a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.8;
+      }
+      
+      .footer-bottom {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .instagram-logo, .facebook-logo, .github-logo, .linkedin-logo {
+        width: 30px; /* Adjust the width as per your preference */
+        height: auto; /* Automatically adjust height based on width */
+      }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="width: auto; position: relative;  --bs-navbar-padding-y: 0.6rem; --bs-bg-opacity: .5">
+      <div class="container-fluid">
+        <span class="navbar-brand mx-2" style="font-family: 'Salsa';" href="#">Expense Tracker</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/signup">Signup</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 50px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact us
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="mailto:pushpakpallobstudy@gmail.com">Email</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://www.linkedin.com/in/pushpak-pallob/">LinkedIn</a></li>
+                    <li class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://www.instagram.com/pushpak___03/">Instagram</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <span class="container3"></span>
+
+  <div class="container2" id="responsive-text1">
+      <h3 class="main-text1" style="font-family: 'Salsa';">Track Your Expenses Daily</h3>   
+  </div>
+
+  <div  class="container2" id="responsive-text2">
+      <h1 class="main-text2" style="font-family: 'Salsa';">PROSPER GRADUALLY</h1>
+  </div>
+
+  <div class="container2" id="responsive-text3" >
+      <h6 class="sub-text" style="font-family: 'Salsa'; font-size: 20px; font-weight: bold; color: rgb(255, 255, 255);">&#60&#60;Start Tracking Your Spendings&#62&#62;</h6>
+  </div>
+
+
+  <form action="/login" method="get">
+    <div class="container1">
+      <button type="submit" class="button"><a style="font-family: 'Salsa';">Add Expense</a></button>
+    </div>
+  </form>
+
+  <footer class="footer footer-expand-sm bg-dark footer-dark" style="width: auto; position: relative;  --bs-footer-padding-y: 0.6rem; --bs-bg-opacity: .5">
+    <div class="footer-left"  style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+      <h4 style="font-family: 'Salsa';">Pushpak Pallob</h4>
+      <p style="font-family: 'Salsa';">3rd year Student<br>Information Technology, BTech<br>Techno International, New Town</p>
+      <p style="font-family: 'Salsa';">West Bengal, India</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/pushpak___03/" target="_blank" style="font-family: 'Salsa';"><i class="fa-brands fa-instagram"></i>Instagram</a>
+      <a href="https://www.facebook.com/pushpak.pallob" target="_blank" style="font-family: 'Salsa';"><i class="fa-brands fa-facebook"></i>Facebook</a>
+      <a href="www.linkedin.com/in/pushpak-pallob" target="_blank" style="font-family: 'Salsa';"><i class="fa-brands fa-linkedin"></i>LinedIn</a>
+      <a href="https://github.com/pushpak-3002" target="_blank" style="font-family: 'Salsa';"><i class="fa-brands fa-github"></i>Github</a>
+    </div>
+    <hr class="footer-divider" style="height: 2px; color: #ffffff;">
+    <div class="footer-bottom">
+      <p style="font-family: 'Salsa';">&copy; 2024 Pushpak. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+<script>
+
+function adjustFontSize() {
+  var container1 = document.getElementById("responsive-text1");
+  var text1 = container1.querySelector(".main-text1");
+
+  var container2 = document.getElementById("responsive-text2");
+  var text2 = container2.querySelector(".main-text2");
+
+  var container3 = document.getElementById("responsive-text3");
+  var text3 = container3.querySelector(".sub-text");
+
+  var containerWidth1 = container1.offsetWidth;
+  var containerWidth2 = container2.offsetWidth;
+
+  var maxWidth1 = containerWidth1 * 0.7;
+  var maxWidth2 = containerWidth2 * 0.6;
+
+  var fontRatio1 = maxWidth1 / text1.offsetWidth;
+  var fontRatio2 = maxWidth2 / text2.offsetWidth;
+
+  var fontRatio = Math.min(fontRatio1, fontRatio2);
+
+  var initialFontSize1 = parseFloat(getComputedStyle(text1).fontSize);
+  var initialFontSize2 = parseFloat(getComputedStyle(text2).fontSize);
+
+  var newFontSize1 = Math.max(initialFontSize1 * fontRatio, 14); // Set a minimum font size of 14px
+  var newFontSize2 = Math.max(initialFontSize2 * fontRatio, 24); // Set a minimum font size of 24px
+
+  text1.style.fontSize = newFontSize1 + "px";
+  text2.style.fontSize = newFontSize2 + "px";
+
+  // Reset line-height for text1 and text2
+  var lineHeight1 = parseFloat(getComputedStyle(text1).lineHeight);
+  var lineHeight2 = parseFloat(getComputedStyle(text2).lineHeight);
+
+  text1.style.lineHeight = lineHeight1 / initialFontSize1 * newFontSize1 + "px";
+  text2.style.lineHeight = lineHeight2 / initialFontSize2 * newFontSize2 + "px";
+}
+
+window.addEventListener("resize", adjustFontSize);
+adjustFontSize(); // Run initially
+
+
+
+
+</script>
+
+</body>
+</html>
